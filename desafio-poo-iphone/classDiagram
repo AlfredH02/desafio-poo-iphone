@@ -1,0 +1,24 @@
+classDiagram
+    Iphone --|> Reprodutor Musical
+    Iphone --|> Aparelho Telefônico
+    Iphone --|> Navegador na Internet
+    Iphone : +int releaseYear
+    Iphone : +String model
+    Iphone : +String numero
+    Iphone : +String musicas[]
+
+    class Reprodutor Musical{
+     +exibirPagina(String url)
+      +adicionarNovaAba()
+      +atualizarPagina()
+    }
+    class Aparelho Telefônico{
+      +ligar(String numero)
+      +atender()
+      +iniciarCorreioVoz()
+    }
+    class Navegador na Internet{
+      +exibirPagina(String url)
+      +adicionarNovaAba()
+      +atualizarPagina()
+    }
